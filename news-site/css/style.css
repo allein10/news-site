@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color:  #f8f9fa;
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Varela Round ' sans-serif;
+    margin-bottom: 0.7rem;
+    line-height: 1.3;
+}
+
+p{
+    margin: .5rem 0;
+    font-family: 'Varela Round';
+}
+
+/* navbar */
+
+#main-nav{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+#main-nav .container{
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 1fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+#main-nav .logo{
+    width: 65px;
+}
+
+#main-nav ul li a{
+    padding: 0 5rem;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+
+#main-nav ul li:hover{
+    border-bottom: 1px solid var(--primary);
+    cursor: pointer;
+}
+
+#main-nav ul li{
+   text-align: center;
+}
+
+#main-nav ul{
+    display: flex;
+    text-align: center;
+    justify-self: center;
+}
+#main-nav .social-icons{
+    justify-self: end;
+}
+#main-nav .social-icons a{
+    margin-right: 0.9rem;
+}
+
+#header{
+    position: relative;
+    color: #fff;
+    padding: 2rem;
+    background: #333;
+}
+
+#header::before{
+    content: '';
+    background: url('/img/rowing.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#header .header-container{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+#header .header-content{
+    z-index: 1;
+}
+/* body */
+
+
+.body-content-header{
+    margin: 20px 0px;
+}
+.body-content{
+    display: grid;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+}
+.container-cards .cards-item{
+    margin: 10px 10px 0px 0px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+/* footer */
+#footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--dark);
+    height: 41vh;
+    color: #fff;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+}
+
+.footer-item{
+    padding: 20px 10px 0 0;
+    text-align: start;
+    height: 35vh;
+}
+
+.footer-item img{
+    width: 150px;
+}
+
+.footer-item ul li{
+    display: block;
+    margin-right: 20px;
+    padding: 0px 0 10px 0;
+    width: 90%;
+    border-bottom: 2px dotted #333;
+}
+.footer-item form input{
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.footer-item form button{
+    width: 80%;
+}
+
+.footer-item a{
+    color: #fff;
+    padding-right: 15px ;
+}
+.footer-copy{
+    background-color: #444;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
